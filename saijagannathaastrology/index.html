@@ -1,0 +1,1214 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="googlebot-news" content="nosnippet">
+<meta name="robots" content="noimageindex, nofollow, nosnippet">
+
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<!--Srart Style -->
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/fonts.css">
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Favicon Link -->
+<link rel="shortcut icon" type="image/png" href="images/header/favicon.png">
+
+    
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1769851,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    
+
+<style type="text/css">
+
+.mob-box a.btn.btn-default.btn-bottom {
+    color: #fff;
+    padding: 4px 10px;
+}
+.mob-box-show {
+    display: none;
+}
+.mob-box-show {
+    display: none;
+}
+@media (max-width: 768px) {
+	 .mob-box {
+        display: none;
+    }
+     .mob-box {
+        border-radius: 15px 15px 0 0;
+        width: 100%;
+    }
+    .mob-box-show {
+        position: fixed;
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        background: #8d6a25;
+        display: block;
+    }
+    .mob-box-show .nav-item {
+        border-right: 1px solid #ffffff;
+        width: 50%
+    }
+    .mob-box-show .nav-item .nav-link {
+        color: #FFF;
+        padding: 8px!important;
+    }
+}
+</style>
+<style type="text/css">
+	.slider, 
+.slider > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 500px;
+     /*height: 100vh;*/ /* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+}
+
+.slider > div {
+    position: absolute;
+}
+
+.slider > i {
+    color: #5bbd72;
+    position: absolute;
+    font-size: 60px;
+    margin: 20px;
+    top: 40%;
+    text-shadow: 0 10px 2px #223422;
+    transition: .3s;
+    width: 30px;
+    padding: 10px 13px;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    cursor: pointer;
+    line-height: 0;
+    box-sizing: content-box;
+    border-radius: 3px;
+    z-index: 4;
+}
+
+.slider > i svg {
+    margin-top: 3px;
+}
+
+.slider > .left {
+    left: -100px;
+}
+.slider > .right {
+    right: -100px;
+}
+.slider:hover > .left {
+    left: 0;
+}
+.slider:hover > .right {
+    right: 0;
+}
+
+.slider > i:hover {
+    background:#fff;
+    background: rgba(255, 255, 255, .8);
+    transform: translateX(-2px);
+}
+
+.slider > i.right:hover {
+    transform: translateX(2px);
+}
+
+.slider > i.right:active,
+.slider > i.left:active {
+    transform: translateY(1px);
+}
+
+.slider:hover > div {
+    transform: scale(1.01);
+}
+
+.hoverZoomOff:hover > div {
+    transform: scale(1);
+}
+
+.slider > ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 4;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+}
+
+.slider > ul > li {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    list-style: none;
+    float: left;
+    margin: 10px 10px 0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.slider > ul > .showli {
+    background-color: #7EC03D;
+    -moz-animation: boing .5s forwards;
+    -o-animation: boing .5s forwards;
+    -webkit-animation: boing .5s forwards;
+    animation: boing .5s forwards;
+}
+
+.slider > ul > li:hover {
+    background-color: #7EC03D;
+}
+
+.slider > .show {
+    z-index: 1;
+}
+
+.hideDots > ul {
+    display: none;
+}
+
+.showArrows > .left {
+    left: 0;
+}
+
+.showArrows > .right {
+    right: 0;
+}
+
+.titleBar {
+    z-index: 2;
+    display: inline-block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%);
+    padding: 20px 30px;
+    transition: .3s;
+    color: #fff;
+}
+
+.titleBar * {
+    transform: translate(-20px, 30px);
+    transition: all 700ms cubic-bezier(0.37, 0.31, 0.2, 0.85) 200ms;
+    opacity: 0;
+}
+
+.titleBarTop .titleBar * {
+    transform: translate(-20px, -30px);
+}
+
+.slider:hover .titleBar,
+.slider:hover .titleBar * {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.titleBarTop .titleBar {
+    top: 0;
+    bottom: initial;
+    transform: translateY(-100%);
+}
+
+.slider > div span {
+    display: block;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    width: 100%;
+}
+
+
+@keyframes boing {
+    0% {
+        transform: scale(1.2);
+    }
+    40% {
+        transform: scale(.6);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -------------------------------------- */
+
+#slider2 {
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.row2Wrap {
+    display: flex;
+}
+
+.content {
+    padding: 50px;
+    margin-bottom: 100px;
+}
+/*
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+h1, h2, h3 {
+    font-family: 'Crimson Text', sans-serif;
+    font-weight: 100;
+}
+body {
+    font: 15px 'Titillium Web', Arial, sans-serif;
+    background: radial-gradient(#121212, #000);
+    height: 100%;
+    color: #aaa;
+    margin: 0;
+    padding: 0;
+}*/
+
+.mob-box {
+    position: fixed;
+    bottom: 0;
+    width: auto;
+    background: #000;
+    padding: 0;
+    border-top: 1px solid #000;
+    border-radius: 0 15px 0 0;
+}
+.content {
+    padding: 10px 15vw;
+}
+@media only screen and (max-width: 600px) {
+ 	.slider, 
+.slider > div {
+    /* Images default to Center Center. Maybe try 'center top'? */
+    background-position: center center;
+    display: block;
+    width: 100%;
+    height: 200px;
+     /*height: 100vh;*/ /* If you want fullscreen */
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    overflow: hidden;
+    -moz-transition: transform .4s;
+    -o-transition: transform .4s;
+    -webkit-transition: transform .4s;
+    transition: transform .4s;
+}}
+
+
+#more {display: none;}
+
+
+.container-fluid1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+background-color:white;
+}
+</style>
+</head>
+<body>
+    
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KD2DDC9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Header Start -->
+<div class="ast_top_header" style="background-color:black">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<div class="ast_logo">
+					<a href="index.html"><img src="images\jagannatha.png" alt="Logo" title="Logo" width="160px"></a>
+					<button class="ast_menu_btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+				</div>
+			</div>
+			<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+				<div class="ast_main_menu_wrapper">
+					<div class="ast_menu">
+						<ul>
+							<li><a  style="color:" href="index.html">Home</a></li>
+							<li><a  style="color:" href="index.html#about-us">About Us</a></li>
+							<li><a  style="color:" href="index.html#services">Services</a></li>
+							<!-- <li><a  style="color:" href="index.html">Ratings And Reviews</a></li> -->
+							<li><a  style="color:" href="contact.html">Contact us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Header End -->  
+<!--Slider Start-->
+<div style="padding-top:7%">
+<div class="slider" id="slider1" >
+    <!-- Slides -->
+
+    <div style="background-image:url(images/slider/Banner_02.jpg)"></div>
+    <div style="background-image:url(images/slider/Banner_03.jpg)"></div>
+
+    <!-- <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_110627-8240-Myst.jpg)"></div> -->
+    <!-- <div style="background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1200_Sharpened-version.jpg)"></div> -->
+    <!-- The Arrows -->
+    <i class="left" class="arrows" style="z-index:2; position:absolute;">
+<svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z">
+</path></svg></i>
+    <i class="right" class="arrows" style="z-index:2; position:absolute;">
+<svg viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path></svg></i>
+    
+</div>
+</div>
+
+
+
+<!--Services Start-->
+<div class="ast_service_wrapper ast_toppadder20 ast_bottompadder70 " id="services">
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-sm-12 ">
+				<div class="text-center">
+					<h1 style="color:red">Sai Jagannatha Astrology Services</h1>
+					<p>Connect With famous Astrologer in Bangalore to discuss your concerns and get solutions<br><br></p>
+				</div>
+			</div>
+			<div class=" col-sm-4 ">
+				<div >
+					<img src="images/services/Love Success Mantra.jpg" alt="Service">
+					<h4>LOVE SUCCESS MANTRA</h4>
+					<p>Love success astrologer Bangalore: Mantra For ...</p>
+<a href="#" style="color:red">read more...</a>
+
+<br><br>
+	</div >			
+			</div>
+			<div class=" col-sm-4 ">
+				 
+					<img src="images/services/Health Problems.jpg" alt="Service">
+					<h4>HEALTH PROBLEMS</h4>
+					<p>In the golden old days when someone fell sick,</p>
+<a href="#" style="color:red">read more...</a>
+ 	<br><br>
+				 
+			</div>
+			<div class="  col-sm-4  ">
+				
+					<img src="images/services/MARRIAGE & COMPATIBILITY.jpg" alt="Service">
+					<h4>MARRIAGE & COMPATIBILITY</h4>
+					<p>Horoscope Matching for Marriage: Horoscope is </p>
+<a href="#" style="color:red">read more...</a>
+<br><br> 
+			</div>
+			<div class=" col-sm-4 ">
+				 
+					<img src="images/services/HUSBAND WIFE PROBLEM.jpg" alt="Service">
+					<h4>HUSBAND WIFE PROBLEM</h4>
+					<p>Any wife would love to lead a happy marital</p>
+<a href="#" style="color:red">read more...</a>
+<br><br>  
+			</div>
+			<div class=" col-sm-4 ">
+				 
+					<img src="images/services/LOVE MARRIAGE.jpg" alt="Service">
+					<h4>LOVE MARRIAGE</h4>
+					<p>Will I be able to marry the person I</p>
+<a href="#" style="color:red">read more...</a>
+
+<br><br>					 
+			</div>
+			<div class=" col-sm-4  ">
+				 
+					<img src="images/services/FUTURE PREDICTIONS.jpg" alt="Service">
+					<h4>FUTURE PREDICTIONS</h4>
+					<p>When will I get a job? When will I</p>
+<a href="#" style="color:red">read more...</a>
+<br><br> 
+			</div>
+			<div class="  col-sm-4  ">
+				 
+					<img src="images/services/EDUCATION AND JOB.jpg" alt="Service">
+					<h4>EDUCATION AND JOB</h4>
+					<p>Will my son get admission in the best college?</p>
+<a href="#" style="color:red">read more...</a>
+<br><br> 
+			</div>
+			<div class="  col-sm-4  ">
+				 
+					<img src="images/services/RELATIONSHIP PROBLEM.jpg" alt="Service">
+					<h4>RELATIONSHIP PROBLEM</h4>
+					<p>Why is there no peace at home? Why are</p>
+<a href="#" style="color:red">read more...</a>
+<br><br> 
+			</div>
+			<div class="  col-sm-4  ">
+				 
+					<img src="images/services/FAMILY PROBLEMS.jpg" alt="Service">
+					<h4>FAMILY PROBLEMS</h4>
+					<p>Why are my children not listening to me? Why</p>
+<a href="#" style="color:red">read more...</a>
+<br><br> 
+			</div>
+			<div class=" col-sm-4 ">
+				 
+					<img src="images/services/FINANCIAL PROBLEMS.jpg" alt="Service">
+					<h4>FINANCIAL PROBLEMS</h4>
+					<p>“Money is the root cause of all evil” goes</p>
+<a href="#" style="color:red">read more...</a>
+<br><br>
+					 
+			</div>
+			<div class="  col-sm-4  ">
+				 
+					<img src="images/services/NEGATIVE ENERGY REMEDIES.jpg" alt="Service">
+					<h4>NEGATIVE ENERGY REMEDIES</h4>
+					<p>Why do I get nightmares? Why are my son’s</p>
+<a href="#" style="color:red">read more...</a>
+<br><br> 
+			</div>
+		</div>
+	</div>
+</div>
+<!--Services End-->
+
+
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+
+<div class="ast_wedo_wrapper ast_toppadder70 ast_bottompadder50" >
+	 
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="ast_heading">
+					<h1 style="text-transform:none;">Contact  <span>us</span></h1>
+				</div>
+			
+		<style type="text/css">
+			#contact {width:100%; height:100%; margin 0 auto; }
+
+/*.container {width:960px; height:auto; margin: 0 auto; padding: 50px 0;}*/
+
+#contact .container form input,
+#contact .container form textarea {
+	width:100%;
+	height:50px;
+	padding:5px 10px;
+	font-size: 14px;
+	color:#999;
+	letter-spacing:1px;
+	background: #FFF;
+	border:2px solid #FFF;
+	margin-bottom:25px;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+	border:2px solid #dd4545;
+	color:#999;}
+
+#contact .container form textarea {
+	height:150px;}
+
+#contact .container form .submit {
+	width:100%;
+	padding:5px 10px;
+	font-size: 12px;
+	letter-spacing:1px;
+	background:#dd4545;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+	border:2px solid #b43838;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form .submit:hover {
+	color:#FFF;
+	border:2px solid #dd4545;
+	background: #b43838;
+	cursor:pointer;}
+
+#contact .container form .required {
+	color:#b43838;}
+		</style>
+		<section id="contact">
+  <div class="container" style=" padding-left: 5%; padding-right:;">
+<form name="htmlform" method="post" action="infomail.php">
+<input type="text" name="name" placeholder="Name" required >
+<input type="text" name="phone" placeholder="Phone Number" required>
+<input  type="email" name="email" placeholder="Email" required>
+<input name="information" placeholder="subject" required >
+<button name="submit_contact" type="submit" class="ast_btn">SEND</button>
+</form>
+ </div>
+
+
+</div>
+
+ <div class="col-sm-6">
+<div class="ast_mapnform_wrapper" >
+	
+	<div class="ast_contact_map"  style="background-color:#f4f4f4;padding-top: 0px; padding-left: 5%;" >
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.898718010033!2d77.6353921148221!3d12.978329390851426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22e610583310d621!2sSai%20Jagannatha%20Astrology%20Best%20Astrologer%20in%20Bangalore!5e0!3m2!1sen!2sin!4v1599402829123!5m2!1sen!2sin" allowfullscreen></iframe>
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.913061374951!2d77.6360273!3d12.9774122!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a57339153b%3A0x73e679ee53bb021e!2sSai%20Balaji%20Anugraha!5e0!3m2!1sen!2sin!4v1586774632481!5m2!1sen!2sin" width="600" height="450"
+ frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+	</div>
+ 
+</div>
+</div>
+</div>
+</div>
+
+<!--WeDo Start-->
+<div class="ast_wedo_wrapper ast_toppadder30  " id="rr" style="background-color:#F0FFFF	;">
+	<div class="container" >
+		<div class="row">
+			<div class=" col-sm-12 ">
+				<div class="ast_heading">
+					<h1>ratings and  <span>reviews</span></h1>
+				</div>
+			</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3 text-center" style="padding-top: 10px;">
+	<a href="https://www.google.com/search?safe=active&rlz=1C1CHBF_enIN915IN915&ei=4tS3X6-0I4eprtoP5eGQiAY&q=saijagannathaastrologycenter&oq=saijagannathaastrologycenter&gs_lcp=CgZwc3ktYWIQAzIQCC4QxwEQrwEQyQMQDRCTAjIECAAQDToJCAAQyQMQDRAeUP8UWNQWYJsbaABwAHgAgAGdAogBxASSAQUwLjIuMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwivrfngrJHtAhWHlEsFHeUwBGEQ4dUDCA0&uact=5#lrd=0x3bae17dfb5431c8d:0x22e610583310d621,1" target="_blank">
+<img src="images/r&r/Google r.jpg"></a>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3" style="padding-top: 10px;">
+	<a href="https://www.sulekha.com/sai-jagannatha-astrology-center-indira-nagar-bangalore-contact-address?host=www&" target="_blank">
+<img src="images/r&r/sulekha.jpeg"></a>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3" style="padding-top: 10px;">
+	<a href="https://www.justdial.com/Bangalore/sai-jagannatha-astrology-centre-Pandit-Jagannath-guruji-Opp-To-Metro-Station-Indiranagar/080PXX80-XX80-200912201601-I6W1_BZDET" target="_blank">
+<img src="images/r&r/jd.jpeg"></a>
+</div>
+
+
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-3 text-center" style="padding-top: 10px;">
+	<!-- <img src="images/r&r/google.jpeg"> -->
+	<!-- <a href="#" class="ast_btn">Book Appointment</a> -->
+	<a href="https://www.facebook.com/pg/saijagannathaastrology/reviews/?ref=page_internal">
+<img src="images/r&r/review.png" style="height:515px"></a>
+<br><br>
+
+
+</div>
+		</div>
+	</div>
+</div>
+<!--WeDo End-->
+
+<!--Timer Section start -->
+<div class="ast_wedo_wrapper ast_toppadder70 ast_bottompadder50">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 ">
+<h3 class="text-dark-red fw-700 fs-30 text-center">Video Testimonials<br><br></h3>
+             
+<div class="col-sm-12 "><video width="100%" controls="" poster="https://www.outsideonline.com/sites/default/files/styles/full-page/public/2016/05/05/human-nature-4k-vth_h.jpg?itok=hWcSU_k3">
+<source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-1610-large.mp4" type="video/mp4"></video></div>
+<div class="col-sm-12">
+<video width="100%" controls="" poster="https://www.outsideonline.com/sites/default/files/styles/full-page/public/2016/05/05/human-nature-4k-vth_h.jpg?itok=hWcSU_k3">
+<source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-1610-large.mp4" type="video/mp4"></video></div>
+<div class="col-sm-12"><video width="100%" controls="" poster="https://www.outsideonline.com/sites/default/files/styles/full-page/public/2016/05/05/human-nature-4k-vth_h.jpg?itok=hWcSU_k3">
+<source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-1610-large.mp4" type="video/mp4"> </video></div>
+<div class="col-sm-12">
+<video width="100%" controls="" poster="https://www.outsideonline.com/sites/default/files/styles/full-page/public/2016/05/05/human-nature-4k-vth_h.jpg?itok=hWcSU_k3">
+<source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-1610-large.mp4" type="video/mp4"></video></div>
+<div class="col-sm-12"> 
+<video width="100%" controls="" poster="https://www.outsideonline.com/sites/default/files/styles/full-page/public/2016/05/05/human-nature-4k-vth_h.jpg?itok=hWcSU_k3">
+<source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-1610-large.mp4" type="video/mp4"></video>
+</div>
+			</div>
+			<div class="col-sm-6 ">
+ 
+<h1 class="text-center">Top Rated Astrologer on Google</h1>
+<h3 class="text-center">Google Reviews</h3>
+
+<div class="elfsight-app-934093ee-d5c7-44c9-b500-951f9b3e2ceb">
+<div id="eapps-google-reviews-934093ee-d5c7-44c9-b500-951f9b3e2ceb" data-app="eapps-google-reviews" 
+data-app-version="1.0.3" class="jsx-450874143 eapp-google-reviews-root-layout-component eapps-google-reviews-934093ee-d5c7-44c9-b500-951f9b3e2ceb-custom-css-hook">
+<div class="Foundation__Outer-sc-11tbro4-0 bLJSPr Nutshell__StyledFoundation-sc-1bop1tp-0 hjRSZs"><div class="Foundation__Inner-sc-11tbro4-1 kJrSUc">
+<div class="CommonLayout__Inner-d1flxf-1 iJGCgt">
+<div class="Header__Component-sc-17gc7x6-0 dVhtUm"><div class="Header__WidgetTitle-sc-17gc7x6-2 eoXEfb"></div>
+<div class="Header__Container-sc-17gc7x6-1 hhrtTp"><div class="Header__SupplierAndStats-sc-17gc7x6-4 dxSSmX">
+<div class="Supplier__Component-sc-1vwbp06-0 IWwjm"><div class="Supplier__Inner-sc-1vwbp06-1 igWDfe" style="opacity: 1;">
+<div class="SupplierBranding__Container-sc-12x9p9t-0 icvzwr Supplier__StyledSupplierBranding-sc-1vwbp06-2 dtkZNv">
+<svg width="85px" height="36px" viewBox="0 0 85 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title></title>
+<desc>Created with Sketch.</desc><g id="logos/google__3o6PVIQY" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="google_2015__3o6PVIQY">
+<rect id="Rectangle__3o6PVIQY" x="0" y="0" width="85" height="36"></rect>
+<path d="M20.82051,13.8285403 L10.9585121,13.8285403 L10.9585121,16.7549491 L17.9526292,
+16.7549491 C17.6071093,20.8585601 14.1930357,22.6085804 10.9703375,22.6085804 C6.8472338,22.6085804 3.24942855,19.3645384 3.24942855,14.8175829 C3.24942855,
+10.3881993 6.67907946,6.97693356 10.9794447,6.97693356 C14.2972206,6.97693356 16.2522225,9.09196401 16.2522225,9.09196401 L18.3012295,6.97010295 C18.3012295,6.97010295 15.6712777,4.0423 10.8747175,4.0423 C4.76744864,4.0423 0.0422999999,9.19733415 0.0422999999,14.7654363 C0.0422999999,20.2215356 4.48712612,25.5420753 11.0306691,25.5420753 C16.7860807,25.5420753 20.9990888,21.5993904 20.9990888,15.7694496 C20.9990888,
+14.5394417 20.82051,13.8285403 20.82051,13.8285403 Z" id="path2998__3o6PVIQY" fill="#4285F4" fill-rule="nonzero"></path>
+<path d="M28.899228,11.7094728 C24.8526602,11.7094728 21.9526644,14.8730534 21.9526644,18.5627572 C21.9526644,22.3070153 24.7654943,25.5294394 28.9467825,25.5294394 C32.7319827,25.5294394 35.8329889,22.6363394 35.8329889,18.6432338 C35.8329889,14.0665692 32.2257972,11.7094728 28.899228,11.7094728 L28.899228,11.7094728 Z M28.9394662,
+14.4237174 C30.9294664,14.4237174 32.8151293,16.0325192 32.8151293,18.6249432 C32.8151293,21.1623705 30.9373934,22.8170247 28.930321,22.8170247 C26.7249386,22.8170247 24.9851565,21.0507416 24.9851565,18.6048245 C24.9851565,16.2113628 26.7033664,14.4237174 28.9394662,14.4237174 L28.9394662,14.4237174 Z" id="path3000__3o6PVIQY" fill="#EA4335" fill-rule="nonzero"></path>
+<path d="M44.0076424,11.7094728 C39.9610739,11.7094728 37.0610789,14.8730534 37.0610789,18.5627572 C37.0610789,22.3070153 39.8739088,25.5294394 44.0551961,25.5294394 C47.8403964,25.5294394 50.9414026,22.6363394 50.9414026,18.6432338 C50.9414026,14.0665692 47.3342109,11.7094728 44.0076424,11.7094728 Z M44.0478799,14.4237174 C46.03788,14.4237174 47.9235429,16.0325192 47.9235429,18.6249432 C47.9235429,21.1623705 46.0458079,
+22.8170247 44.0387355,22.8170247 C41.8333522,22.8170247 40.0935701,21.0507416 40.0935701,18.6048245 C40.0935701,16.2113628 41.8117801,14.4237174 44.0478799,14.4237174 L44.0478799,14.4237174 Z"
+ id="path3005__3o6PVIQY" fill="#FBBC05" fill-rule="nonzero"></path>
+<path d="M58.8254221,11.716789 C55.1111158,11.716789 52.1916154,14.9699517 52.1916154,18.6212851 C52.1916154,22.7804935 55.5763625,25.5385847 58.7614036,25.5385847 C60.7308069,25.5385847 61.7780052,24.7568358 62.5511037,23.8595572 L62.5511037,25.2221671 C62.5511037,27.6062053 61.1035554,29.0338142 58.9186986,29.0338142 C56.8080082,29.0338142 55.7493001,27.4643717 55.3814018,26.5738019 L52.7256851,
+27.6840085 C53.667833,29.6760466 55.5643306,31.753546 58.9406464,31.753546 C62.6335642,31.753546 65.4482484,29.4274402 65.4482484,24.5490929 L65.4482484,12.1319728 L62.5511037,12.1319728 L62.5511037,13.3025365 C61.6609019,12.3426691 60.442749,11.716789 58.8254221,11.716789 Z M59.0942826,14.4255465 C60.9153348,14.4255465 62.7852164,15.9804564 62.7852164,18.6359176 C62.7852164,21.334963 60.9193203,22.822511 59.0540451,22.822511 C57.0738721,
+22.822511 55.2314229,21.2146516 55.2314229,18.6615234 C55.2314229,16.0085943 57.1449784,14.4255465 
+59.0942826,14.4255465 L59.0942826,14.4255465 Z" id="path3007__3o6PVIQY" fill="#4285F4" fill-rule="nonzero"></path>
+<path d="M78.3299385,11.7003275 C74.8262836,11.7003275 71.8845225,14.4878831 71.8845225,18.6011664 C71.8845225,22.9535598 75.1635695,25.5349266 78.6664756,25.5349266 C81.5900976,25.5349266 83.3844636,23.9354976 84.4552796,22.5024353 L82.0665902,20.9130298 C81.4467429,21.8749842 80.4104978,22.8151956 78.6811072,22.8151956 C76.7385042,22.8151956 75.8453177,21.7514775 75.2919567,20.7209835 L84.5576964,
+16.8764135 L84.0766693,15.7497463 C83.1811952,13.5433004 81.0930015,11.7003275 78.3299385,11.7003275 L78.3299385,11.7003275 Z M78.4506466,14.3578732 C79.7131527,14.3578732 80.621744,15.0291065 81.0076029,15.833881 L74.820074,18.4200945 C74.5533141,16.4178248 76.450195,14.3578732 78.4506466,14.3578732 Z" id="path3011__3o6PVIQY" fill="#EA4335" fill-rule="nonzero"></path><polygon id="path3015__3o6PVIQY" fill="#34A853" fill-rule="nonzero"
+ points="67.4674711 25.1244795 70.5109366 25.1244795 70.5109366 4.7566717 67.4674711 4.7566717"></polygon></g></g></svg></div>Rating &nbsp;&nbsp;5.0&nbsp;&nbsp;</div></div>
+<div class="Stats__Component-aktd5o-0 hpOZPO"><div class="Stats__Container-aktd5o-1 fKDQYu">
+<div class="Stats__RatingContainer-aktd5o-2 fSyrLr">
+<div class="Stats__RatingValue-aktd5o-3 SeuOT"></div>
+<div class="Stats__ReviewsCount-aktd5o-4 eAEiPm">341&nbsp;reviews</div></div></div></div></div></div>
+
+
+<div class="CommonLayout__ItemsContainer-d1flxf-0 kzgrjX">
+<div class="ListLayout__Component-sc-14tk461-0 iklbIj CommonLayout__StyledItemsLayout-d1flxf-2 jGWa-dD">
+<div class="Grid__Container-x730z7-0 dvlMxW" style="padding-left: 0px;">
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 0px; margin-right: 0px;">
+<div class="container-fluid1">
+<a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" target="_blank" rel="noopener noreferrer nofollow" 
+class="Classic__Heading-sc-19u56uy-3 fRxnJV"><div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg" 
+style="background-image: url(&quot;https://lh3.googleusercontent.com/a-/AOh14Gg0z4DEGH-kueVg6Sr5E5LU2gHBMcP1XqoSRVyH=w36-h36-p-c0x00000000-rp;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Piki Mondal</div>
+<div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr">
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div>
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div>
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg>
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="October 6, 2020, 5:30 AM GMT+5:30" title="October 6, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+1 week ago</div></div></div></a>
+<div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 bnQLfW"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>I always dreamt of buying a private jet so that we can go on a family trip. I collected money and everything was ready, but I found that some amount was missing from that. I got really worried as I planned everything and my family was very excited. I went to a very famous astrologer in Bangalore whom I knew for many years. He asked me to remain calm for a while and take a deep breath while he performed a Pooja remedy. Surprisingly, I received a call from somewhere stating that you won a lottery. It was like magic. Thank you  Guru Ji. it was all because of you.
+</div></div></div>
+<div class="Text__Control-x4hk0b-1 jzeIrV"></div></div></div></div></div>
+
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1"><a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" 
+target="_blank" rel="noopener noreferrer nofollow" class="Classic__Heading-sc-19u56uy-3 fRxnJV">
+<div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN 
+Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh3.googleusercontent.com/-AD1pZwbJvvI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmf9MmZSJgbkrGXGXzc6GfJFMJEqA/w36-h36-p-c0x00000000-rp/photo.jpg;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Sujith Priya</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+3 months ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 kXueNX"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>Place is extraordinary and warm. he has an wonderfully peaceful energy, and is an excellent guide and counselor for finding inner peace and strength in your career, relationships, and health. He truly wants the best for each of his clients and puts a lot of energy and effort into his work. Since working with Panditji my success and energy in every aspect of life has drastically improved. He's amazing Astrologer in Bangalore teaching his clients that through meditation and energy work, you can attract anything (positive) you desire in life. He is also very easy to talk to. I recommend everyone visit him at least once as they begin their journey to finding inner peace and strength--because truly, that is where your success in love and career comes from anyways.
+</div></div></div></div></div></div></div>
+
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1"><a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" 
+target="_blank" rel="noopener noreferrer nofollow" class="Classic__Heading-sc-19u56uy-3 fRxnJV">
+<div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN 
+Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh5.googleusercontent.com/-EJCFpK6bc0w/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnIX0eeOkuckaWJ8OvND_1MMyEXVw/w36-h36-p-c0x00000000-rp/photo.jpg;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Hitesh Vidur</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+a week ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 kXueNX"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>Sleep disorder is a very major issue that many of us face, due to stress, health issues or many other reasons. I too was not able to sleep properly for the last two weeks. And improper sleep was affecting my health badly. I discussed this problem with my parents and they took me to a genuine astrologer in Bangalore. He performed some Pooja remedies on me. Now I’m able to sleep peacefully at night. Thank you so much  Guru Ji.
+</div></div></div></div></div></div></div>
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1"><a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" 
+target="_blank" rel="noopener noreferrer nofollow" class="Classic__Heading-sc-19u56uy-3 fRxnJV">
+<div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN 
+Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh4.googleusercontent.com/-8L-tbpfDa94/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuckbyCXNNviTnDzZIqKw1qvbhqIoOA/w36-h36-p-c0x00000000-rp/photo.jpg;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Surjan Ganga</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+3 months ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 kXueNX"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>Highly talented  Astrologer in Bangalore and down to earth person. He knows how to deliver a message and articulates well. He conveyed how to overcome problems. He is ready to give you advice over the phone as well. He has very good …
+</div></div></div></div></div></div></div>
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1"><a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" 
+target="_blank" rel="noopener noreferrer nofollow" class="Classic__Heading-sc-19u56uy-3 fRxnJV">
+<div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN 
+Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh5.googleusercontent.com/-a1FC5RHhrgU/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnmCH1JVj6lBfBL4YHac3q-VWDiVw/w36-h36-p-c0x00000000-rp/photo.jpg;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP"> Swamy A</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+3 months ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 kXueNX"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>As they say, "The truth shall set you free". He was very kind and welcoming questions about my future during my palm reading. I would recommend anyone who is isn't certain about their future to see him. He is the best there is! I’m very thankful to you. You have a such great knowledge power very nice Astrologer in Bangalore
+</div></div></div></div></div></div></div>
+
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1"><a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" 
+target="_blank" rel="noopener noreferrer nofollow" class="Classic__Heading-sc-19u56uy-3 fRxnJV">
+<div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN 
+Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh3.googleusercontent.com/a-/AOh14GjcrxFUW-bi97BpBPfvDh3wr9KNNCxTkWS6i0wMSA=w36-h36-p-c0x00000000-rp;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Nojmul Hussain</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+4 months ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 kXueNX"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>Place is extraordinary and warm. he has an wonderfully peaceful energy, and is an excellent guide and counselor for finding inner peace and strength in your career, relationships, and health. He truly wants the best for each of his clients …
+</div></div></div></div></div></div></div>
+
+
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1">
+<a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" target="_blank" rel="noopener noreferrer nofollow"
+ class="Classic__Heading-sc-19u56uy-3 fRxnJV"><div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh3.googleusercontent.com/-25dL-9lgiWQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnbIWIChhC3Eb23renxeR-b30mIww/w36-h36-p-c0x00000000-rp/photo.jpg;);opacity: 1; transition: opacity 0.3s ease 0s;"></div><div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Jk Lohit</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg>
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div>
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg>
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div>
+<div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+3 months ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh"><div class="SimpleShortener__Outer-sc-19xjxqz-0 eySqbp">
+<div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>Happily enjoying my 7 years of relationship, thank you so much Guru Ji and soon we are going to marry this is possible only because of Guru Ji. Once I was suffered a lot in my relationship because my girl friend refused to marry me because …
+</div></div></div>
+<div class="Text__Control-x4hk0b-1 jzeIrV"></div></div></div></div></div>
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1">
+<a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" target="_blank" rel="noopener noreferrer nofollow"
+ class="Classic__Heading-sc-19u56uy-3 fRxnJV"><div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg"
+ style="background-image: url(&quot;https://lh3.googleusercontent.com/a-/AOh14Gh70Yir_TT4ewduxe9o1SemnxJ_6-wshrmUU1JC=w36-h36-p-c0x00000000-rp;);opacity: 1; transition: opacity 0.3s ease 0s;"></div><div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP">Krishna Kitty</div><div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg>
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div>
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg>
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div>
+<div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+<div datetime="September 27, 2020, 5:30 AM GMT+5:30" title="September 27, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">
+3 months ago</div></div></div></a><div class="Classic__Content-sc-19u56uy-7 bPGRJn"><div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh"><div class="SimpleShortener__Outer-sc-19xjxqz-0 eySqbp">
+<div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>He is Famous Astrologer in Bangalore Being an intuitive person, I only trust people who emits positive energy/aura/vibes. Jagannath guruji has a very positive aura, and you will feel it the moment you meet him. His place also has his …
+</div></div></div>
+<div class="Text__Control-x4hk0b-1 jzeIrV"></div></div></div></div></div>
+
+
+
+<div class="container-fluid1" style="width: 100%; margin-top: 20px; margin-right: 0px;">
+<div class="container-fluid1">
+<a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545" target="_blank" rel="noopener noreferrer nofollow" class="Classic__Heading-sc-19u56uy-3 fRxnJV">
+<div class="AuthorPicture__Container-sc-1baibv3-0 ifcLIN Classic__StyledAuthorPicture-sc-19u56uy-1 bjfrNg" 
+style="background-image: url(&quot;https://lh3.googleusercontent.com/a-/AOh14Gi49ue9U067Dfps0b5fO1mb-7GihOD-c8Lz_BaU=w36-h36-p-c0x00000000-rp;); opacity: 1; transition: opacity 0.3s ease 0s;"></div>
+<div class="Classic__HeadingInfo-sc-19u56uy-2 idRCWT">
+<div class="Classic__AuthorName-sc-19u56uy-4 fSayeP"> Real Masti</div>
+<div class="Rating__Container-cmor0f-0 dlqGRR Classic__StyledRating-sc-19u56uy-5 cKUNZS">
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div><div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg>
+<svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div>
+<div class="Box__Container-vw10v2-0 PWKqr"><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Unfilled-pkcl3w-1 HCqPk krjrmM">
+<path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg><svg viewBox="0 0 14 14" class="FilledSvg-pkcl3w-0 FilledSvg__Filled-pkcl3w-2 HCqPk ebpkzz"><path fill="none" d="M6.826 10.743l-3.28 1.724a.5.5 0 0 1-.725-.528l.627-3.65a.5.5 0 0 0-.144-.443L.65 5.26a.5.5 0 0 1 .277-.853l3.666-.533a.5.5 0 0 0 .377-.273L6.61.279a.5.5 0 0 1 .896 0L9.147 3.6a.5.5 0 0 0 .376.273l3.666.533a.5.5 0 0 1 .277.853l-2.653 2.586a.5.5 0 0 0-.144.442l.627 3.651a.5.5 0 0 1-.726.528l-3.279-1.724a.5.5 0 0 0-.465 0z"></path></svg></div></div><div class="PublicationDate__Container-sc-1r10lfu-0 cAlCsI Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO"><div datetime="September 26, 2020, 5:30 AM GMT+5:30" title="September 26, 2020, 5:30 AM GMT+5:30" class="DateTime__Time-sc-13gi7wj-0 kUVVHj Classic__StyledPublicationDate-sc-19u56uy-6 iLeOhO">a weeek ago</div></div></div></a>
+<div class="Classic__Content-sc-19u56uy-7 bPGRJn">
+<div class="Text__Container-x4hk0b-0 REwpY Classic__StyledText-sc-19u56uy-8 eTEVoh">
+<div class="SimpleShortener__Outer-sc-19xjxqz-0 hkLFfT"><div class="SimpleShortener__Inner-sc-19xjxqz-1 elBtuP">
+<div>I am in a live-in relationship with my colleague. We decided to marry. Suddenly my partner refused to marry me because my partner got another marriage proposal from parent side. At this point my friend told me to meet  Guru  Ji. With his …
+</div></div></div>
+<div class="Text__Control-x4hk0b-1 jzeIrV"></div></div></div></div></div>
+
+</div>
+<div class="LoadMoreButton__Container-sc-5z801y-0 dNGILU ListLayout__StyledLoadMoreButton-sc-14tk461-1 icrvL">
+<div class="LoadMoreButton__Component-sc-5z801y-1 exWYLP"><a href="https://www.google.com/maps/place/Sai+Jagannatha+Astrology+-+Best+Astrologer+In+Bangalore/@12.978582,77.6361658,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae17dfb5431c8d:0x22e610583310d621!8m2!3d12.978582!4d77.6383545">Load More</a></div></div></div></div></div></div></div></div></div>
+                </div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--Timer Section end -->
+
+<!-- Download wrapper start-->
+<div class="ast_download_wrapper  " >
+	
+</div>
+
+
+<!-- Download wrapper End-->
+<!-- Footer wrapper start-->
+<div class="ast_footer_wrapper ast_toppadder90 ast_bottompadder20">
+<div class="container" style="color:white">
+		<div class="row">
+			<div class="col-sm-12 ">
+				<div class="ast_heading">
+<br><br>
+<br><br>
+<br><br>
+					<h1  style="color:white">Get Solution while sitting at your 
+ <span>home</span></h1>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3">
+				<div class="ast_download_box">
+					<ul>
+						<!-- <li><a href="#"><img src="images/content/download1.png" alt="Download" title="Download"></a></li>
+						<li><a href="#"><img src="images/content/download2.png" alt="Download" title="Download"></a></li>
+ -->						<li><i class="fa fa-phone" style="    float: left;
+    width: 30px;
+    color: #ff6f00;
+    font-size: 20px;
+    padding-top: 3px;"></i> <a href="tel:9880711822">9880711822</a></li>
+						<li><a href="mailto:saijagannathaastrologycenter@gmail.com"><i class="fa fa-envelope-o" style="    float: left;
+    width: 30px;
+    color: #ff6f00;
+    font-size: 20px;
+    padding-top: 3px;"></i>saijagannathaastrologycenter@gmail.com</a></li>
+    <br>
+    <br>
+    <br>
+	<a href="appointment.html" class="ast_btn">Book Appointment</a>
+
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+<br><br>
+<br><br>
+<br><br>
+	<div class="container">
+		<div class="row">
+	
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="ast_copyright_wrapper">
+<p>&copy; Copyright 2020, All Rights Reserved, <a href="SaiJagannathaastrologycenter.com">Sai Jagannatha astrology Center</a></p>	<br>
+					
+					
+					
+					</div>			
+			</div>	
+		</div>	
+	</div>
+</div>
+<!-- Footer wrapper End-->
+
+
+<!-- <div class="mob-box ">
+	<div class="btn-group btn-group-justified">
+		<a data-toggle="modal" data-target="#sitevisit" class="btn btn-default btn-bottom hide-mob"><i class="fa fa-phone" aria-hidden="true" style="display: none; margin: auto;"></i>
+		Organize Site Visit </a>
+		<a href="https://api.whatsapp.com/send?phone=9880711822&text=Hi%20I%27m%20interested%20in%20Godrej%20Lake%20Gardens%20Sarjapur%20Bengaluru.%20Please%20Share%20Details." class="btn btn-default btn-bottom"><i class="fa fa-whatsapp" aria-hidden="true" style="display: none; margin: auto;"></i> <img src="images/whatsapp.png">
+		<span class="small">9880711822</span></a>
+		<a href="tel:9880711822" class="btn btn-default btn-bottom v-center show-mob hide-big"><i class="fa fa-phone-square" aria-hidden="true"></i>
+		&nbsp; Tap to Call </a>
+	</div>
+</div> -->
+<div class="mob-box-show ">
+	<ul class="nav  nav-fill" style="    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;">
+		<li class="nav-item" style="background-color: #f58220">
+			<a href="https://api.whatsapp.com/send?phone=9880711822" class="nav-link "> <img src="images/whatsapp.png">
+			<span class="small">9880711822</span></a>
+		</li>
+		<li class="nav-item" style="background-color: #f58220">
+			<a href="tel:9880711822" class="nav-link  ">
+			&nbsp; Tap to Call </a>
+		</li>
+	</ul>
+</div>
+<!--Main js file Style--> 
+
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript">
+	
+(function($) {
+  "use strict";
+  $.fn.sliderResponsive = function(settings) {
+    
+    var set = $.extend( 
+      {
+        slidePause: 5000,
+        fadeSpeed: 800,
+        autoPlay: "on",
+        showArrows: "off", 
+        hideDots: "off", 
+        hoverZoom: "on",
+        titleBarTop: "off"
+      },
+      settings
+    ); 
+    
+    var $slider = $(this);
+    var size = $slider.find("> div").length; //number of slides
+    var position = 0; // current position of carousal
+    var sliderIntervalID; // used to clear autoplay
+      
+    // Add a Dot for each slide
+    $slider.append("<ul></ul>");
+    $slider.find("> div").each(function(){
+      $slider.find("> ul").append('<li></li>');
+    });
+      
+    // Put .show on the first Slide
+    $slider.find("div:first-of-type").addClass("show");
+      
+    // Put .showLi on the first dot
+    $slider.find("li:first-of-type").addClass("showli")
+
+     //fadeout all items except .show
+    $slider.find("> div").not(".show").fadeOut();
+    
+    // If Autoplay is set to 'on' than start it
+    if (set.autoPlay === "on") {
+        startSlider(); 
+    } 
+    
+    // If showarrows is set to 'on' then don't hide them
+    if (set.showArrows === "on") {
+        $slider.addClass('showArrows'); 
+    }
+    
+    // If hideDots is set to 'on' then hide them
+    if (set.hideDots === "on") {
+        $slider.addClass('hideDots'); 
+    }
+    
+    // If hoverZoom is set to 'off' then stop it
+    if (set.hoverZoom === "off") {
+        $slider.addClass('hoverZoomOff'); 
+    }
+    
+    // If titleBarTop is set to 'on' then move it up
+    if (set.titleBarTop === "on") {
+        $slider.addClass('titleBarTop'); 
+    }
+
+    // function to start auto play
+    function startSlider() {
+      sliderIntervalID = setInterval(function() {
+        nextSlide();
+      }, set.slidePause);
+    }
+    
+    // on mouseover stop the autoplay
+    $slider.mouseover(function() {
+      if (set.autoPlay === "on") {
+        clearInterval(sliderIntervalID);
+      }
+    });
+      
+    // on mouseout starts the autoplay
+    $slider.mouseout(function() {
+      if (set.autoPlay === "on") {
+        startSlider();
+      }
+    });
+
+    //on right arrow click
+    $slider.find("> .right").click(nextSlide)
+
+    //on left arrow click
+    $slider.find("> .left").click(prevSlide);
+      
+    // Go to next slide
+    function nextSlide() {
+      position = $slider.find(".show").index() + 1;
+      if (position > size - 1) position = 0;
+      changeCarousel(position);
+    }
+    
+    // Go to previous slide
+    function prevSlide() {
+      position = $slider.find(".show").index() - 1;
+      if (position < 0) position = size - 1;
+      changeCarousel(position);
+    }
+
+    //when user clicks slider button
+    $slider.find(" > ul > li").click(function() {
+      position = $(this).index();
+      changeCarousel($(this).index());
+    });
+
+    //this changes the image and button selection
+    function changeCarousel() {
+      $slider.find(".show").removeClass("show").fadeOut();
+      $slider
+        .find("> div")
+        .eq(position)
+        .fadeIn(set.fadeSpeed)
+        .addClass("show");
+      // The Dots
+      $slider.find("> ul").find(".showli").removeClass("showli");
+      $slider.find("> ul > li").eq(position).addClass("showli");
+    }
+
+    return $slider;
+  };
+})(jQuery);
+
+
+ 
+//////////////////////////////////////////////
+// Activate each slider - change options
+//////////////////////////////////////////////
+$(document).ready(function() {
+  
+  $("#slider1").sliderResponsive({
+  // Using default everything
+    // slidePause: 5000,
+    // fadeSpeed: 800,
+    // autoPlay: "on",
+    // showArrows: "off", 
+    // hideDots: "off", 
+    // hoverZoom: "on", 
+    // titleBarTop: "off"
+  });
+  
+  $("#slider2").sliderResponsive({
+    fadeSpeed: 300,
+    autoPlay: "off",
+    showArrows: "on",
+    hideDots: "on"
+  });
+  
+  $("#slider3").sliderResponsive({
+    hoverZoom: "off",
+    hideDots: "on"
+  });
+  
+}); 
+
+
+
+</script>
+<!--Main js file End-->
+
+
+</body>
+</html>
